@@ -1,118 +1,48 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="">
-        <meta charset="utf-8">
-        <script src="jquery.js"></script>
-        <script>
-            $(dicument).ready(function(){
-                 alert("teste"):
-            });
-         </script>
-        <style>
-            .site{
-                width:1900px;
-                height:930px;
-                border:2px solid #1E90FF;
-                background-image:url("https://i.pinimg.com/originals/23/db/5c/23db5c8d9fbd2cfd696d64a7963b76d3.gif");
-            }
-            .header{
-                width:1900px;
-                height:150px;
-                border:2px solid #1E90FF ;
-                padding:0px;
-                background: rgb(2,0,36);
-                background: rgb(2,0,36);
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
-            }
-            .main{
-                width:1900px;
-                height:630px;
-                border:2px solid #1E90FF ;
-            }
-            .footer{
-                width:1900px;
-                height:140px;
-                border:2px solid #1E90FF ;
-                background: rgb(2,0,36);
-                background: rgb(2,0,36);
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
-            }
+<html lang="PT-BR">
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="">
+<meta charset="utf-8">
+<script src="jquery.js"></script>
+<script>
 
-            .esquerda{
-                width:190px;
-                height:630px;
-                border:2px solid #1E90FF ;
-                display:inline-block;
-                float:left;
-                background: rgb(2,0,36);
-                background: rgb(2,0,36);
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
-            }
-            .centro{
-                width:1px;
-                height:630px;
-                border:2px solid #1E90FF ;
-                display:inline-block;
-                float:right;
-                background: rgb(2,0,36);
-                background: rgb(2,0,36);
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
-            }
-            .direita{
-                width:190px;
-                height:630px;
-                border:2px solid #1E90FF ;
-                display:inline;
-                float:right;
-                background: rgb(2,0,36);
-                background: rgb(2,0,36);
-                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
-            }
-        </style>
-    </head>
-    <body>
-        <div class="site">
-            <div class="header">
-             
-            </div>
-            <div class="main">
-                <div class="esquerda">
+</script>
+<style>
 
-                </div>
-                <div class="centro">
-                    <fieldset>
-                        <legend>calculadora</legend>
-                            <input type="number" id="campo">
-                            </br></br>
-                            <buttonid id="btm_um">1</button>
-                            <buttonid id="btm_dois">2</button>
-                            <buttonid id="btm_tres">3</button>
-                            <buttonid id="btm_adicao">+</button>
-                            <buttonid id="btm_porcentagem">%</button>    
-                            </br></br>
-                            </br></br>
-                            <buttonid id="btm_quatro">4</button>
-                            <buttonid id="btm_cinco"5</button>
-                            <buttonid id="btbtm_seis6</button>
-                            <buttonid id="btm_subtracao>-</button>
-                            <buttonid id="btm_potencia">^</button>.-
-                            </br></br>
-                            <buttonid id="btm_sete">7</button>
-                            <buttonid id="btm_oito">8</button>
-                            <buttonid id="btm_nove">9</button>
-                            <buttonid id="btm_divisao">/</button>
-                            <buttonid id="btm_pa">(</button>
-                            </br></br>
-                            <buttonid id="btm_ponto">.</button>
-                            <buttonid id="btm_zero">0</button>
-                            <buttonid id="btm_virgula">,</button>padding:0px;
-                </div>
-                <div class="direita">
+</style>
+</head>
+<body>
 
-                </div>
-            </div>   
-            <div class="footer">
 
-            </div> 
+<fieldset>
+<legend>CALCULADORA</legend>
+<input type="text" id="visor">
+</br></br><div class="direita">
+
+</div>
+</div>
+<div class="footer">
+ick="adicionar('5')">5</button>
+<button id="btn_seis" onclick="adicionar('6')">6</button>
+<button id="btn_subtracao" onclick="adicionar('-')">-</button>
+<button id="btn_potencia" onclick="adicionar('^')">^</button>
+</br></br>
+<button id="btn_sete" onclick="adicionar('7')">7</button>
+<button id="btn_oito" onclick="adicionar('8')">8</button>
+<button id="btn_nove" onclick="adicionar('9')">9</button>
+<button id="btn_divisao" onclick="adicionar('/')">/</button>
+<button id="btn_pa" onclick="adicionar('')">(</button>
+</br></br>
+<button id="btn_ponto" onclick="adicionar('.')">.</button>
+<button id="btn_zero" onclick="adicionar('0')">0</button>
+<button id="btn_virgula" onclick="adicionar(',')">,</button>
+<button id="btn_multiplicacao" onclick="adicionar('*')">x</button>
+<button id="btn_pf" onclick="adicionar('')">)</button>
+
+</br></br>
+<button id="btn_limpar" onclick="('')">C</button>
+<button id="btn_igual" onclick="('')">=</button>
+</fieldset>
+</body>
+</html>
